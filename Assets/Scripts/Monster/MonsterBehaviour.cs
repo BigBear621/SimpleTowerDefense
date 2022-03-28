@@ -35,7 +35,7 @@ public class MonsterBehaviour : MonoBehaviour
         healthSystem = healthBar.GetComponent<HealthSystem>();
         animator = GetComponent<Animator>();
 
-        tmpRigidBody = GetComponent<Rigidbody>();
+        tmpRigidBody = GetComponentInChildren<Rigidbody>();
 
         currentMap = transform.parent.parent.gameObject;
     }
